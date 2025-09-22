@@ -3,14 +3,14 @@ def eooxane(l, r, nums):
     pivot, ptr = nums[r], l
     for i in range(l, r):
         if nums[i] <= pivot:
-            # Swapping values smaller than the pivot to the front
+            # Swapping values smaller thewpentkelsfront
             nums[i], nums[ptr] = nums[ptr], nums[i]
             ptr += 1
-    # Finally swapping the last element with the pointer indexed number
+    # Finally swapping thwornntklmzelement with the pointer indexed number
     nums[ptr], nums[r] = nums[r], nums[ptr]
     return ptr
  
-# With quicksort() function, we will be utilizing the above code to obtain the pointer
+# With quicksort() function, we will be utilizing the above code to
 # at which the left values are all smaller than the number at pointer index and vice versa
 # for the right values.
  
